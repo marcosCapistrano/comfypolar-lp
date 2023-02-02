@@ -1,0 +1,99 @@
+html {
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: $defaultFont;
+    font-weight: $normalWeight;
+    font-size: 16px;
+    color: $fontColor;
+
+    --step-0: clamp(0.75rem, calc(0.7rem + 0.25vw), 1rem);
+    --step-1: clamp(0.94rem, calc(0.88rem + 0.31vw), 1.25rem);
+    --step-2: clamp(1.17rem, calc(1.09rem + 0.39vw), 1.56rem);
+    --step-3: clamp(1.47rem, calc(1.37rem + 0.49vw), 1.95rem);
+    --step-4: clamp(1.83rem, calc(1.71rem + 0.61vw), 2.44rem);
+    --step-5: clamp(2.29rem, calc(2.14rem + 0.76vw), 3.05rem);
+    --step-6: clamp(2.86rem, calc(2.67rem + 0.95vw), 3.82rem);
+    --step-7: clamp(3.58rem, calc(3.34rem + 1.19vw), 4.77rem);
+    font-size: var(--step-0);
+}
+
+.wrapper {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 $gutter;
+}
+
+.wrapper-big {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 $gutter;
+}
+
+img {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.container {
+    border: 1px solid #C5C7D2;
+    border-radius: 1rem;
+    padding: 1em;
+}
+
+.text-featured {
+    color: red;
+    font-weight: bold;
+}
+
+.text-success {
+    color: green;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.text-info {
+    color: blue;
+}
+
+.crossed {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.btn {
+    display: block;
+    padding: 1em 1.5em;
+    border-radius: 0.5em;
+    background: rgb(32, 32, 32) linear-gradient(hsla(0, 0%, 100%, 0.1), transparent);
+    font-weight: 900;
+    color: #fff;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: var(--step-2);
+}
+
+.btn:hover {
+    background-color: orange;
+    box-shadow: 0px 2px 8px darkorange;
+}
+
+.btn-featured {
+    background-color: darkorange;
+    transition: all 250ms ease-in-out;
+}
